@@ -1,0 +1,21 @@
+app:
+  name: my-quarkus-app
+  namespace: my-quarkus-app-dev
+  cluster: .apps.rh-ocp-01.cool.lab
+
+git:
+  branch: main
+  repo: https://github.com/RedHatNordicsSA/my-quarkus-app
+  org: RedHatNordicsSA
+  name: my-quarkus-app
+  host: github.com?owner=RedHatNordicsSA&repo=my-quarkus-app
+  token: ''
+  webhookSecret: ''
+
+
+image:
+  registry: Openshift
+  organization: 
+  host: image-registry.openshift-image-registry.svc:5000
+  name: my-quarkus-app
+  tag: latest
